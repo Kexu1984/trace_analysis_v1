@@ -217,7 +217,7 @@ def main():
         print("Open your browser and go to: http://127.0.0.1:8050")
         
         # Run the app
-        app.run_server(debug=True, host='127.0.0.1', port=8050)
+        app.run(debug=True, host='127.0.0.1', port=8050)
         
     except Exception as e:
         print(f"Error: {e}")
