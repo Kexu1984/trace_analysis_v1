@@ -1,0 +1,189 @@
+{
+  "trace_info": {
+    "total_events": 13,
+    "total_events_in_buffer": 13,
+    "saved_at": "2025-08-04T11:25:30.770201",
+    "trace_manager": "GlobalTraceManager",
+    "module_filter": null,
+    "unified_buffer": true
+  },
+  "events": [
+    {
+      "timestamp": 1754306730.7695093,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "MainRAM",
+        "operation": "WRITE",
+        "address": "0x20000000",
+        "offset": "0x00000000",
+        "value": "0xDEADBEEF",
+        "width": 4
+      }
+    },
+    {
+      "timestamp": 1754306730.7695498,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainBus",
+      "event_type": "BUS_TRANSACTION",
+      "event_data": {
+        "master_id": 1,
+        "address": "0x20000000",
+        "operation": "WRITE",
+        "value": "0xDEADBEEF",
+        "width": 4,
+        "device_name": "MainRAM",
+        "success": true,
+        "error_message": null
+      }
+    },
+    {
+      "timestamp": 1754306730.7695827,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainBus",
+      "event_type": "BUS_TRANSACTION",
+      "event_data": {
+        "master_id": 3,
+        "address": "0x08000000",
+        "operation": "WRITE",
+        "value": "0x12345678",
+        "width": 4,
+        "device_name": "BootROM",
+        "success": false,
+        "error_message": "Memory device BootROM is read-only"
+      }
+    },
+    {
+      "timestamp": 1754306730.7696052,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "MainRAM",
+        "operation": "READ",
+        "address": "0x20000000",
+        "offset": "0x00000000",
+        "value": "0xDEADBEEF",
+        "width": 4
+      }
+    },
+    {
+      "timestamp": 1754306730.7696168,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainBus",
+      "event_type": "BUS_TRANSACTION",
+      "event_data": {
+        "master_id": 1,
+        "address": "0x20000000",
+        "operation": "READ",
+        "value": "0xDEADBEEF",
+        "width": 4,
+        "device_name": "MainRAM",
+        "success": true,
+        "error_message": null
+      }
+    },
+    {
+      "timestamp": 1754306730.7696364,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeriphRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "PeriphRAM",
+        "operation": "WRITE",
+        "address": "0x40000000",
+        "offset": "0x00000000",
+        "value": "0xCAFEBABE",
+        "width": 4
+      }
+    },
+    {
+      "timestamp": 1754306730.769644,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeripheralBus",
+      "event_type": "BUS_TRANSACTION",
+      "event_data": {
+        "master_id": 2,
+        "address": "0x40000000",
+        "operation": "WRITE",
+        "value": "0xCAFEBABE",
+        "width": 4,
+        "device_name": "PeriphRAM",
+        "success": true,
+        "error_message": null
+      }
+    },
+    {
+      "timestamp": 1754306730.7696567,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeriphRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "PeriphRAM",
+        "operation": "READ",
+        "address": "0x40000000",
+        "offset": "0x00000000",
+        "value": "0xCAFEBABE",
+        "width": 4
+      }
+    },
+    {
+      "timestamp": 1754306730.7696629,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeripheralBus",
+      "event_type": "BUS_TRANSACTION",
+      "event_data": {
+        "master_id": 2,
+        "address": "0x40000000",
+        "operation": "READ",
+        "value": "0xCAFEBABE",
+        "width": 4,
+        "device_name": "PeriphRAM",
+        "success": true,
+        "error_message": null
+      }
+    },
+    {
+      "timestamp": 1754306730.7696726,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "MainRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "MainRAM",
+        "operation": "RESET"
+      }
+    },
+    {
+      "timestamp": 1754306730.7697442,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeriphRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "PeriphRAM",
+        "operation": "DISABLE"
+      }
+    },
+    {
+      "timestamp": 1754306730.7697504,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "PeriphRAM",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "PeriphRAM",
+        "operation": "ENABLE"
+      }
+    },
+    {
+      "timestamp": 1754306730.7697551,
+      "formatted_time": "2025-08-04 11:25:30.769",
+      "module_name": "UnifiedSystem",
+      "event_type": "DEVICE_EVENT",
+      "event_data": {
+        "device_name": "UnifiedSystem",
+        "operation": "DEMO_EVENT",
+        "message": "Unified trace demonstration"
+      }
+    }
+  ]
+}
